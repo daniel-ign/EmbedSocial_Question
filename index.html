@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Ignjatov - EmbedSocial</title>
+    <link rel="stylesheet" href="index.css"></link>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body onload="onLoad()">
+    <div class="row" id="row1">
+      <div class="card">
+        <div class="container">
+            <div class="title">
+                <img src="https://placekitten.com/g/100/100" class="profile-img">
+                <div class="profile-info">
+                    <span class="username">John Smith</span><br>
+                    <span class="date">2018-03-12 03:00:00</span>
+                </div>
+                <img src="resources/instagram-logo.svg" class="logo">
+            </div>
+          <img src="https://placekitten.com/600/400" class="main-img" >
+          <p class="caption">
+            Duis in facilisis lectus. Nulla molestie erat erat, quis tempor enim sodales vitae. Sed tempus, libero fringilla rhoncus ullamcorper, justo elit dignissim ex, nec elementum quam sem in urna.
+          </p>
+          
+          <div class="likes">
+              <hr>
+              <button class="heart-img" onclick="like(heart1.id, likenumber1.id)">
+                <img src="resources/heart.svg" id="heart1" class="heart-logo">
+              </button>
+            <div class="like-number" id="likenumber1">123</div>
+          </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="container">
+            <div class="title">
+                <img src="https://placekitten.com/g/100/100" class="profile-img">
+                <div class="profile-info">
+                    <span class="username">John Smith</span><br>
+                    <span class="date">2018-03-12 03:00:00</span>
+                </div>
+                <img src="resources/instagram-logo.svg" class="logo">
+            </div>
+          <img src="https://placekitten.com/600/400" class="main-img" >
+          <p class="caption">
+            Duis in facilisis lectus. Nulla molestie erat erat, quis tempor enim sodales vitae. Sed tempus, libero fringilla rhoncus ullamcorper, justo elit dignissim ex, nec elementum quam sem in urna.
+          </p>
+          <div class="likes">
+            <hr>
+            <button class="heart-img" onclick="like(heart2.id, likenumber2.id)">
+                <img src="resources/heart.svg" id="heart2" class="heart-logo">
+            </button>
+            <div class="like-number" id="likenumber2">123</div>
+          </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="container">
+            <div class="title">
+                <img src="https://placekitten.com/g/100/100" class="profile-img">
+                <div class="profile-info">
+                    <span class="username">John Smith</span><br>
+                    <span class="date">2018-03-12 03:00:00</span>
+                </div>
+                <img src="resources/instagram-logo.svg" class="logo">
+            </div>
+          <img src="https://placekitten.com/600/400" class="main-img" >
+          <p class="caption">
+            Duis in facilisis lectus. Nulla molestie erat erat, quis tempor enim sodales vitae. Sed tempus, libero fringilla rhoncus ullamcorper, justo elit dignissim ex, nec elementum quam sem in urna.
+          </p>
+          <div class="likes">
+            <hr>
+            <button class="heart-img" onclick="like(heart3.id, likenumber3.id)">
+                <img src="resources/heart.svg" id="heart3" class="heart-logo">
+            </button>
+            <div class="like-number" id="likenumber3">123</div>
+          </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="container">
+            <div class="title">
+                <img src="https://placekitten.com/g/100/100" class="profile-img">
+                <div class="profile-info">
+                    <span class="username">John Smith</span><br>
+                    <span class="date">2018-03-12 03:00:00</span>
+                </div>
+                <img src="resources/instagram-logo.svg" class="logo">
+            </div>
+          <img src="https://placekitten.com/600/400" class="main-img" >
+          <p class="caption">
+            Duis in facilisis lectus. Nulla molestie erat erat, quis tempor enim sodales vitae. Sed tempus, libero fringilla rhoncus ullamcorper, justo elit dignissim ex, nec elementum quam sem in urna.
+          </p>
+          <div class="likes">
+            <hr>
+            <button class="heart-img" onclick="like(heart4.id, likenumber4.id)">
+                <img src="resources/heart.svg" id="heart4" class="heart-logo">
+            </button>
+            <div class="like-number" id="likenumber4">123</div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <button class="btn-loadmore" onclick="loadMore()">Load More</button>
+
+    <div class="modal" id="modal1" data-animation="slideInOutLeft">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <button class="close-modal" aria-label="close modal" data-close onclick="closeModal()">
+            <span class="X">✕</span>
+          </button>
+        </header>
+        <section class="modal-content">
+          <div class="modal-card">
+            <div class="modal-container">
+                <div class="modal-title">
+                    <img src="https://placekitten.com/g/100/100" class="modal-profile-img">
+                    <div class="modal-profile-info">
+                        <span class="modal-username">John Smith</span><br>
+                        <span class="modal-date">2018-03-12 03:00:00</span>
+                    </div>
+                    <img src="resources/instagram-logo.svg" class="modal-logo">
+                </div>
+              <img src="https://placekitten.com/600/400" class="modal-main-img" >
+              <p class="modal-caption">
+                Duis in facilisis lectus. Nulla molestie erat erat, quis tempor enim sodales vitae. Sed tempus, libero fringilla rhoncus ullamcorper, justo elit dignissim ex, nec elementum quam sem in urna.
+              </p>
+              
+              <div class="modal-likes">
+                  <hr>
+                  <button class="modal-heart-button" onclick="like(heart1.id, likenumber1.id)">
+                    <img src="resources/heart.svg" id="heart1" class="modal-heart-logo">
+                  </button>
+                <div class="modal-like-number" id="likenumber1">123</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+</body>
+</html>
